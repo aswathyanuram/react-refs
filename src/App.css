@@ -58,6 +58,15 @@
   cursor: pointer;
 }
 
+.content-button-selected {
+  padding: 0.5rem 1rem;
+  margin-right: 0.25rem;
+  background-color: #000000;
+  color: #fefefe;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
 .content-button:hover {
   background-color: #000000;
   color: #fefefe;

@@ -1,0 +1,33 @@
+.p1r-container {
+  padding: 1rem;
+}
+
+.p1r-plus {
+  padding: 1rem;
+  background-color: black;
+  color: #fefefe;
+  cursor: pointer;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p1r-minus {
+  padding: 1rem;
+  background-color: black;
+  color: #fefefe;
+  cursor: pointer;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p1r-content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}

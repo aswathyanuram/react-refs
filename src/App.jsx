@@ -39,7 +39,11 @@ function App() {
       <div className="content">
         <div className="content-buttons">
           <div
-            className="content-button"
+            className={
+              selectedContentTab == TAB_REFERENCE
+                ? "content-button-selected"
+                : "content-button"
+            }
             onClick={() => {
               setSelectedContentTab(TAB_REFERENCE);
             }}
@@ -47,7 +51,11 @@ function App() {
             Reference
           </div>
           <div
-            className="content-button"
+            className={
+              selectedContentTab == TAB_PRACTISE
+                ? "content-button-selected"
+                : "content-button"
+            }
             onClick={() => {
               setSelectedContentTab(TAB_PRACTISE);
             }}
