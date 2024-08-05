@@ -11,18 +11,54 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 0rem 1rem;
   flex-direction: column;
   width: 200px;
 }
 
 .content {
   flex: 1;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   padding: 1rem;
   background-color: rgb(246, 249, 254);
+}
+
+.mainTab {
+  width: 100%;
+  padding: 0.25rem 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tab:hover {
+  background-color: #9aa4b3;
+}
+
+.content-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.25rem;
+  background-color: grey;
+  color: #fefefe;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+}
+
+.content-button:hover {
+  background-color: #000000;
+  color: #fefefe;
 }
