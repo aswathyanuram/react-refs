@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import CounterPractise from "./projects/1/practise/CounterPractise";
 import CounterReference from "./projects/1/reference/CounterReference";
+import ChessReference from "./projects/3/reference/ChessReference";
+import ChessPractise from "./projects/3/practise/ChessPractise";
 
 function App() {
   const projects = [
@@ -10,6 +12,12 @@ function App() {
       title: "Counter",
       reference: <CounterReference />,
       practise: <CounterPractise />,
+    },
+    {
+      id: 2,
+      title: "Chess",
+      reference: <ChessReference />,
+      practise: <ChessPractise />,
     },
   ];
 

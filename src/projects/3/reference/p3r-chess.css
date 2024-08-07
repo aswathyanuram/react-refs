@@ -1,0 +1,27 @@
+.p3r-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.p3r-row {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.p3r-col-white {
+  width: 100px;
+  height: 100px;
+  background-color: #ececec;
+  border: none;
+}
+
+.p3r-col-black {
+  width: 100px;
+  height: 100px;
+  background-color: #2d2d2d;
+  border: none;
+}
