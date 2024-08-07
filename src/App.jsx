@@ -4,6 +4,8 @@ import CounterPractise from "./projects/1/practise/CounterPractise";
 import CounterReference from "./projects/1/reference/CounterReference";
 import ChessReference from "./projects/3/reference/ChessReference";
 import ChessPractise from "./projects/3/practise/ChessPractise";
+import TimerRefence from "./projects/2/practise/reference/TimerReference";
+import TimerPractise from "./projects/2/practise/TimerPractise";
 
 function App() {
   const projects = [
@@ -18,6 +20,12 @@ function App() {
       title: "Chess",
       reference: <ChessReference />,
       practise: <ChessPractise />,
+    },
+    {
+      id: 3,
+      title: "Timer",
+      reference: <TimerRefence />,
+      practise: <TimerPractise />,
     },
   ];
 
