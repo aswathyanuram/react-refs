@@ -1,0 +1,43 @@
+.p4r-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.p4r-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p4r-col {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+.p4r-col:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.p4r-correct {
+  color: green;
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+.p4r-incorrect {
+  color: red;
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

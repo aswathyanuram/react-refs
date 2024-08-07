@@ -38,6 +38,13 @@
   width: 100%;
 }
 
+.tab-selected {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+  background-color: #9aa4b3;
+}
+
 .tab:hover {
   background-color: #9aa4b3;
 }

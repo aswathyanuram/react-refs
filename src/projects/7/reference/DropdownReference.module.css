@@ -1,0 +1,21 @@
+.select {
+  border: none;
+  outline: none;
+  background-color: #e3e3e3;
+  width: 200px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.option {
+  border: none;
+  outline: none;
+  background-color: #e3e3e3;
+  width: 200px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.text {
+  padding: 1rem;
+}

@@ -4,8 +4,16 @@ import CounterPractise from "./projects/1/practise/CounterPractise";
 import CounterReference from "./projects/1/reference/CounterReference";
 import ChessReference from "./projects/3/reference/ChessReference";
 import ChessPractise from "./projects/3/practise/ChessPractise";
-import TimerRefence from "./projects/2/practise/reference/TimerReference";
 import TimerPractise from "./projects/2/practise/TimerPractise";
+import TimerReference from "./projects/2/reference/TimerReference";
+import ClickGameReference from "./projects/4/reference/ClickGameReference";
+import ClickButtonPractise from "./projects/5/practise/ClickButtonPractise";
+import ClickButtonReference from "./projects/5/reference/ClickButtonReference";
+import DropdownPractise from "./projects/7/practise/DropdownPractise";
+import DropdownReference from "./projects/7/reference/DropdownReference";
+import NotesPractise from "./projects/6/practise/NotesPractise";
+import NotesReference from "./projects/6/reference/NotesReference";
+import ClickGamePractise from "./projects/4/practise/ClickGame";
 
 function App() {
   const projects = [
@@ -17,22 +25,48 @@ function App() {
     },
     {
       id: 2,
+      title: "Timer",
+      reference: <TimerReference />,
+      practise: <TimerPractise />,
+    },
+    {
+      id: 3,
       title: "Chess",
       reference: <ChessReference />,
       practise: <ChessPractise />,
     },
     {
-      id: 3,
-      title: "Timer",
-      reference: <TimerRefence />,
-      practise: <TimerPractise />,
+      id: 4,
+      title: "Click Game",
+      reference: <ClickGameReference />,
+      practise: <ClickGamePractise />,
+    },
+    {
+      id: 5,
+      title: "Click Button",
+      reference: <ClickButtonReference />,
+      practise: <ClickButtonPractise />,
+    },
+    {
+      id: 6,
+      title: "Notes App",
+      reference: <NotesReference />,
+      practise: <NotesPractise />,
+    },
+    {
+      id: 7,
+      title: "Dropdown",
+      reference: <DropdownReference />,
+      practise: <DropdownPractise />,
     },
   ];
 
   const TAB_PRACTISE = "TAB_PRACTISE";
   const TAB_REFERENCE = "TAB_REFERENCE";
 
-  const [selectedProject, setSelectedProject] = useState(projects?.[0]);
+  const [selectedProject, setSelectedProject] = useState(
+    projects?.[projects?.length - 1]
+  );
   const [selectedContentTab, setSelectedContentTab] = useState(TAB_REFERENCE);
 
   return (
@@ -40,7 +74,12 @@ function App() {
       <div className="leftsidebar">
         {projects.map((project) => {
           return (
-            <div className="tab" key={project.id}>
+            <div
+              className={
+                selectedProject?.id == project?.id ? "tab-selected" : "tab"
+              }
+              key={project.id}
+            >
               <div
                 onClick={() => {
                   setSelectedProject(project);
