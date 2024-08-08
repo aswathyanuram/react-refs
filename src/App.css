@@ -43,10 +43,12 @@
   cursor: pointer;
   width: 100%;
   background-color: #9aa4b3;
+  color: #fefefe;
 }
 
 .tab:hover {
   background-color: #9aa4b3;
+  color: #fefefe;
 }
 
 .content-buttons {

@@ -14,6 +14,10 @@ import DropdownReference from "./projects/7/reference/DropdownReference";
 import NotesPractise from "./projects/6/practise/NotesPractise";
 import NotesReference from "./projects/6/reference/NotesReference";
 import ClickGamePractise from "./projects/4/practise/ClickGame";
+import ANTReference from "./projects/8/reference/ANTReference";
+import ANTPractise from "./projects/8/practise/ANTPractise";
+import TabsReference from "./projects/9/Reference/TabsReference";
+import TabsPractise from "./projects/9/Practise/TabsPractise";
 
 function App() {
   const projects = [
@@ -58,6 +62,18 @@ function App() {
       title: "Dropdown",
       reference: <DropdownReference />,
       practise: <DropdownPractise />,
+    },
+    {
+      id: 8,
+      title: "ANT UI",
+      reference: <ANTReference />,
+      practise: <ANTPractise />,
+    },
+    {
+      id: 9,
+      title: "Tabs",
+      reference: <TabsReference />,
+      practise: <TabsPractise />,
     },
   ];
 

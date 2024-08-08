@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(90vw - 200px);
+}
+
+.card {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.option {
+  background-color: cyan;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
