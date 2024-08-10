@@ -18,6 +18,8 @@ import ANTReference from "./projects/8/reference/ANTReference";
 import ANTPractise from "./projects/8/practise/ANTPractise";
 import TabsReference from "./projects/9/Reference/TabsReference";
 import TabsPractise from "./projects/9/Practise/TabsPractise";
+import ProductsReference from "./projects/10/reference/ProductsReference";
+import ProductsPractise from "./projects/10/practise/ProductsPractise";
 
 function App() {
   const projects = [
@@ -74,6 +76,12 @@ function App() {
       title: "Tabs",
       reference: <TabsReference />,
       practise: <TabsPractise />,
+    },
+    {
+      id: 10,
+      title: "Products",
+      reference: <ProductsReference />,
+      practise: <ProductsPractise />,
     },
   ];
 
