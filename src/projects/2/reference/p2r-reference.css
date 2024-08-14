@@ -1,14 +1,14 @@
-.p2p-timer {
+.p2r-timer {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
 }
 
-.p2p-hours,
-.p2p-minutes,
-.p2p-seconds,
-.p2p-type {
+.p2r-hours,
+.p2r-minutes,
+.p2r-seconds,
+.p2r-type {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 0.25rem;
   margin: 0.25rem;

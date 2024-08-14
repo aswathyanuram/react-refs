@@ -27,13 +27,13 @@ export default function TimerReference() {
       : convertedHours;
 
   return (
-    <div className="p2p-timer">
-      <div className="p2p-hours">{convertedHours}</div>
+    <div className="p2r-timer">
+      <div className="p2r-hours">{convertedHours}</div>
       <div>:</div>
-      <div className="p2p-minutes">{minutes}</div>
+      <div className="p2r-minutes">{minutes}</div>
       <div>:</div>
-      <div className="p2p-seconds">{seconds}</div>
-      <div className="p2p-type">{hours > 12 ? "PM" : "AM"}</div>
+      <div className="p2r-seconds">{seconds}</div>
+      <div className="p2r-type">{hours > 12 ? "PM" : "AM"}</div>
     </div>
   );
 }
