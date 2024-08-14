@@ -20,6 +20,7 @@ import TabsReference from "./projects/9/Reference/TabsReference";
 import TabsPractise from "./projects/9/Practise/TabsPractise";
 import ProductsReference from "./projects/10/reference/ProductsReference";
 import ProductsPractise from "./projects/10/practise/ProductsPractise";
+import MessagePractise from "./projects/11/practise/MessagePractise";
 
 function App() {
   const projects = [
@@ -82,6 +83,12 @@ function App() {
       title: "Products",
       reference: <ProductsReference />,
       practise: <ProductsPractise />,
+    },
+    {
+      id: 11,
+      title: "Message",
+      reference: "Ref",
+      practise: <MessagePractise />,
     },
   ];
 
